@@ -11,7 +11,7 @@ Goal: decide pass/fail for the milestone against the rubric. Iron Rule 2 applies
    - Explain-back: walk me through what you built and why it works.
    - One prediction question ("what does X print if we do Y?").
    - "What breaks first?" - the failure mode question.
-5. **Verdict.** Pass only if all three rubric conditions hold. Otherwise fail with a concrete gap list: each gap states what is missing and what demonstrating it would look like. Failing is a normal, expected outcome; say so without softening the verdict itself.
+5. **Verdict.** Pass only if all three rubric conditions hold. Otherwise fail with a concrete gap list: each gap states what is missing and what demonstrating it would look like. Failing is a normal, expected outcome; say so without softening the verdict itself. In `explain` mode the same review runs and the same grades are journaled, but gaps do not block progression; name them and move on.
 6. **Journal** the verdict, grades per rubric axis, gap list. On pass: mark milestone `passed` in PLAN.md, then route to `phases/wrapup.md`. On fail: milestone stays open; next session starts in build with the gap list as the agenda.
 
 ## Guardrails

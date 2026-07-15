@@ -67,3 +67,7 @@ for free.
 - Hard gates, honest journal, no social passes.
 - Escalation ladder when stuck: question → hint → direction → fragment.
   Struggle is the point; rescue kills retention.
+- Three modes, picked at intake: `drill` (strict ladder, no rescue),
+  `guide` (ladder plus toy examples and a boilerplate carve-out, default),
+  `explain` (direct code examples, soft gates). Mode changes happen at
+  session start, never mid-struggle.

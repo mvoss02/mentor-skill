@@ -4,6 +4,7 @@
 # Learning plan: <technology> via <repo>
 
 Status: active | completed
+Mode: drill | guide | explain
 Repo: <absolute path>
 Started: <YYYY-MM-DD>
 

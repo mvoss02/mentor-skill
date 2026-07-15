@@ -8,6 +8,7 @@ Goal: co-author PLAN.md. No teaching, no lessons yet.
    - Why this technology? What should exist at the end that doesn't today?
    - Current level: what have they already used or read? Probe one answer with a follow-up to calibrate depth honestly.
    - Time budget per week, target horizon.
+   - Mode: `drill` (strict ladder, no rescue), `guide` (ladder plus toy examples and a boilerplate carve-out, default), or `explain` (direct code examples, soft gates). Explain the tradeoff in one line each; record the choice in PLAN.md.
 2. **Repo audit.** Read the repo before proposing anything: structure, README(s), tooling already present, what is manual today. Note 3-5 concrete artifacts (file paths, resource names) the curriculum can anchor to.
 3. **Currency check.** Web-search the technology's current state: latest stable version, recommended practice, deprecations. Cite one primary source in the plan.
 4. **Ledger check.** If `~/.claude/memory/convention.md` exists, read the ledger index for concepts the learner already holds on this topic; skip or compress covered ground.
