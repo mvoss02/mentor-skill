@@ -12,8 +12,8 @@ project code.
 ## Install
 
 ```bash
-git clone <this-repo>
-cp -r mentor ~/.claude/skills/mentor
+git clone https://github.com/mvoss02/mentor-skill.git
+cp -r mentor-skill/mentor ~/.claude/skills/mentor
 ```
 
 Then in any project: `/mentor` (it is slash-command only by design; a teaching
