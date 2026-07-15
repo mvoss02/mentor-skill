@@ -19,6 +19,10 @@ cp -r mentor ~/.claude/skills/mentor
 Then in any project: `/mentor` (it is slash-command only by design; a teaching
 session should be deliberate).
 
+Arguments: `/mentor drill|guide|explain` requests a mode change (applied at
+session boundaries only), `/mentor status` shows plan progress, any other text
+becomes context for the session.
+
 ## First run
 
 `/mentor` in your repo with a goal in mind, e.g. "I want to learn

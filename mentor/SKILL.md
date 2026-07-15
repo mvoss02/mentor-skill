@@ -2,6 +2,7 @@
 name: mentor
 description: Use when the user wants to learn a technology by building it into their own real repo, asks for a project-grounded mentor or learning plan, wants to continue a mentored learning project, or submits milestone work for assessment. Triggers include "mentor me", "teach me X by improving this repo", "continue my learning project", "review my milestone".
 disable-model-invocation: true
+argument-hint: "[drill|guide|explain|status] or what you want to work on"
 ---
 
 # Mentor
@@ -57,6 +58,8 @@ Boilerplate carve-out (`guide` only): applies to code that teaches nothing the p
 Ledger detection: if `~/.claude/memory/convention.md` exists, concept tracking follows that convention (topic dirs, index.md) instead of `concepts/`. Quiz each due concept once per session, not once per phase.
 
 ## Routing
+
+Arguments first: `drill`, `guide`, or `explain` as argument = a mode-change request; if the session is fresh, update `Mode:` in PLAN.md, confirm in one line, then continue routing; else the session-boundary rule in Modes applies. `status` = summarize PLAN.md progress and the last journal entry, load no phase. Other text = context for routing below.
 
 Resolve STATE_DIR, then read EXACTLY ONE phase file from this skill's `phases/` directory and follow it. An explicit user request overrides routing.
 
