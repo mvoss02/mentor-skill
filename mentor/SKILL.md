@@ -57,6 +57,8 @@ Boilerplate carve-out (`guide` only): applies to code that teaches nothing the p
 
 Ledger detection: if `~/.claude/memory/convention.md` exists, concept tracking follows that convention (topic dirs, index.md) instead of `concepts/`. Quiz each due concept once per session, not once per phase.
 
+**State files are the source of truth, and keeping them current is your job.** The plan is a living document: milestones may be added, dropped, reordered, or resized whenever learner and mentor agree, recorded under Decisions. Any change agreed in conversation (plan, mode, milestone status, decision, verdict) is written to the relevant .md file in the same turn it is agreed. A spoken acknowledgment without a file edit is a lost change: the next session reads only the files, never this conversation.
+
 ## Routing
 
 Arguments first: `drill`, `guide`, or `explain` as argument = a mode-change request; if the session is fresh, update `Mode:` in PLAN.md, confirm in one line, then continue routing; else the session-boundary rule in Modes applies. `status` = summarize PLAN.md progress and the last journal entry, load no phase. Other text = context for routing below.
