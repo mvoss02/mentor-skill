@@ -17,7 +17,20 @@ One self-contained HTML file per lesson. `STATE_DIR/lessons/NNNN-<slug>.html`.
   search, linked prominently.
 - End with: "Ask your mentor when anything is unclear" and links to prior
   lessons for spaced interleaving.
-- Optional short quiz: answer options of equal length, no formatting tells.
+
+## Interactivity (inline JS, required)
+
+Every lesson embeds at least two interactive elements with immediate feedback:
+
+- **Quiz**: 2-4 questions on layer (a). Clicking an answer instantly shows why
+  it is right or wrong (feedback per option, not just "correct"). Answer
+  options of equal length, no formatting tells, correct position varied.
+- **Predict-then-reveal**: for layer (c) prediction prompts, a field or button
+  where the learner commits a prediction first, then reveals the discussion.
+  Reveal without commitment should feel like cheating: disable reveal until
+  something is entered.
+- Plain inline `<script>`, no frameworks, no external requests. Must still
+  read sensibly when printed (feedback text visible in print CSS).
 
 ## Visual rules
 
