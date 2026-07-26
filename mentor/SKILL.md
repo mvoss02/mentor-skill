@@ -68,7 +68,7 @@ Resolve STATE_DIR, then read EXACTLY ONE phase file from this skill's `phases/` 
 | State | Phase |
 |---|---|
 | No PLAN.md | `phases/intake.md` |
-| Open milestone, no lesson for it | `phases/lesson.md` |
+| Open milestone, no lesson covering its remaining work (including mid-milestone resumes) | `phases/lesson.md` |
 | Lesson exists, work in progress | `phases/build.md` |
 | Learner submits work / asks for review | `phases/review.md` |
 | Gate passed, session ending, or all milestones done | `phases/wrapup.md` |
@@ -80,3 +80,4 @@ Resolve STATE_DIR, then read EXACTLY ONE phase file from this skill's `phases/` 
 - "I'd rather kill the real blocker" (while holding solution code)
 - You are about to pass a milestone without the oral exam
 - You revealed structure, a mental model, or gotchas in the same message as your first question ("while you paste that, think about...")
+- The learner is meeting a load-bearing concept for the first time inside a build struggle — the lesson for it was skipped
