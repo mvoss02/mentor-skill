@@ -8,8 +8,10 @@ knowledge (ledger/concept cards), not habit.
 
 - **Struggle-first task** (productive failure): the learner attempts a scoped
   problem BEFORE the concept is explained; the consolidating explanation then
-  contrasts their attempt with the canonical approach. Use when the ledger
-  shows adjacent prior knowledge and the target is conceptual understanding.
+  contrasts their attempt with the canonical approach. Use when the learner
+  actually holds adjacent prior knowledge (stage `practiced` or above on the
+  neighbouring concepts, or demonstrated in the repo) and the target is
+  conceptual understanding. A card merely existing is not prior knowledge.
   [Sinha & Kapur 2021, Rev. Ed. Research: meta-analysis, g = 0.36 for
   concept/transfer when problem-solving precedes instruction]
 - **Worked walkthrough**: study an annotated example first (toy domain, never
@@ -17,8 +19,11 @@ knowledge (ledger/concept cards), not habit.
   for true novices or procedural mechanics. Fade it as expertise grows;
   guidance that helps novices hurts advanced learners.
   [Sweller & Cooper 1985; Kalyuga et al. 2003, "expertise reversal effect"]
-- **Interactive lesson**: the HTML lesson (quiz, predict-then-reveal). Default
-  knowledge layer of a milestone; combine with either entry above.
+- **Visual aid** (HTML lesson): diagrams, flows, one worked example, repo
+  mapping, the DIY spec. Supports the chat teaching, never replaces it: chat
+  owns orientation, teaching, questions, diagnosis, and exercises. Optional
+  predict-then-reveal or quiz blocks are for revisiting later, not the
+  primary interaction (`references/lesson-style.md`).
 - **Prediction drill**: commit a prediction before every consequential
   command. Always on. Aim predictions at the concepts that matter; the boost
   lands on the pretested content specifically.
@@ -31,10 +36,17 @@ knowledge (ledger/concept cards), not habit.
 
 ## Selection heuristic
 
-1. Ledger check: no related concepts → worked-walkthrough entry. Related
-   concepts present (shaky or solid) → struggle-first entry.
-2. Target check: conceptual "why" → struggle-first. Procedural "how" →
-   walkthrough, then fade.
+1. Prior-knowledge check, stage-aware. Ask: does the learner hold a model
+   the attempt can lean on, and is the problem surmountable with it?
+   - Concept `encountered` or missing, or a prerequisite model absent →
+     direct teaching / worked walkthrough first.
+   - `introduced` → guided attempt (hints available) only if adjacent
+     knowledge makes it surmountable; otherwise walkthrough.
+   - `practiced` or above on the neighbours → struggle-first is on the table.
+   Stage is evidence about prior knowledge; prior knowledge and difficulty
+   are what actually decide, not the stage label and never card existence.
+2. Target check: conceptual "why" → lean struggle-first (within rule 1).
+   Procedural "how" → walkthrough, then fade.
 3. Difficulty stays surmountable: two failed attempts in a row → drop one
    level of difficulty. A difficulty is only desirable if the learner can
    get through it. [Bjork 1994, desirable difficulties]
