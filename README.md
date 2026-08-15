@@ -3,17 +3,19 @@
 A Claude Code skill: a principal-engineer mentor that teaches you a technology
 by having you build it into your own real repo, milestone by milestone.
 
-Not a tutorial generator. The mentor audits your repo, spars with you to build
-a learning plan, writes project-grounded HTML lessons, coaches while YOU write
-every line, and gates each milestone behind a hard review: working code,
-unaided explanation, and a "what breaks first" answer. It never writes your
-project code.
+Not a tutorial generator, and not an examiner guarding the answer key. The
+mentor audits your repo, spars with you to build a learning plan, teaches each
+milestone's concepts properly (orientation, mental model, worked example, with
+a project-grounded HTML page as the visual aid), coaches while YOU write every
+line, and gates each milestone behind a hard review: working code, unaided
+explanation, and a "what breaks first" answer. Transfer is checked later,
+spaced. It never writes your project code.
 
 ## Install
 
 ```bash
-git clone https://github.com/mvoss02/mentor-skill.git
-cp -r mentor-skill/mentor ~/.claude/skills/mentor
+git clone <this-repo>
+cp -r mentor ~/.claude/skills/mentor
 ```
 
 Then in any project: `/mentor` (it is slash-command only by design; a teaching
@@ -36,7 +38,8 @@ Everything lives in `~/.claude/mentor/<repo-name>/`:
 - `PLAN.md` — mission, milestones, decisions
 - `JOURNAL.md` — session log, verdicts, gap lists
 - `lessons/` — self-contained HTML lessons (offline, printable)
-- `concepts/` — spaced-repetition concept cards
+- `concepts/` — concept cards with an explicit learning stage
+  (encountered → introduced → practiced → retrievable → transferable)
 
 If `~/.claude` is a dotfiles repo, your learning state syncs across machines
 for free.
@@ -57,7 +60,7 @@ for free.
       "SessionStart": [{
         "hooks": [{
           "type": "command",
-          "command": "grep -rl 'Status: shaky' ~/.claude/mentor/*/concepts/ 2>/dev/null | head -3 | xargs -I{} echo 'Mentor: due concept {}'"
+          "command": "grep -rlE 'stage: (introduced|practiced|retrievable)' ~/.claude/mentor/*/concepts/ 2>/dev/null | head -3 | xargs -I{} echo 'Mentor: concept to review {}'"
         }]
       }]
     }
@@ -66,11 +69,16 @@ for free.
 
 ## Philosophy
 
+- Orient → teach → model → practice together → fade scaffolding → retrieve
+  (spaced) → transfer. Teach first when background is missing; struggle is a
+  tool, not the teaching.
 - Learn by building something real; the repo improves as you do.
 - Predictions before commands; wrong predictions are the best teachers.
+- Questions calibrated to what was taught and demonstrated. A card existing
+  never means the concept is known.
 - Hard gates, honest journal, no social passes.
-- Escalation ladder when stuck: question → hint → direction → fragment.
-  Struggle is the point; rescue kills retention.
+- Escalation ladder when stuck on something already taught: question → hint →
+  direction → fragment. Rescue on the deliverable kills retention.
 - Three modes, picked at intake: `drill` (strict ladder, no rescue),
   `guide` (ladder plus toy examples and a boilerplate carve-out, default),
   `explain` (direct code examples, soft gates). Mode changes happen at

@@ -38,7 +38,14 @@ knowledge (ledger/concept cards), not habit.
 3. Difficulty stays surmountable: two failed attempts in a row → drop one
    level of difficulty. A difficulty is only desirable if the learner can
    get through it. [Bjork 1994, desirable difficulties]
-4. Whatever the method, answers stay behind the ladder. Unrestricted answer
-   access measurably harms retained learning even while inflating practice
-   performance (+48% practice, -17% unassisted exam); scaffolded hints erase
-   the harm. [Bastani et al. 2025, PNAS; Kestin et al. 2025, Sci. Reports]
+4. Teaching before practice is not "giving the answer". The harm in the
+   literature comes from unrestricted answer access DURING practice on the
+   deliverable (+48% practice, -17% unassisted exam); scaffolded hints erase
+   it. [Bastani et al. 2025, PNAS; Kestin et al. 2025, Sci. Reports]. So:
+   explain fully, show worked toy examples, then keep the deliverable's
+   answers behind the ladder while the learner builds.
+5. Calibrate questions to stage (see `~/.claude/docs/pedagogy/teaching.md`):
+   prediction from intuition → core model → familiar case → basic failure
+   mode → alternatives → nuance. Wrong answers are diagnosed (terminology /
+   mechanism / prerequisite / boundary / order / layer / trivial detail) and
+   the specific piece repaired, then one more small application.

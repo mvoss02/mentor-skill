@@ -15,6 +15,9 @@ doesn't today. Ground every lesson and milestone in this.>
 ## Learner baseline
 <From intake: prior knowledge, strong areas to move fast through, gaps.>
 
+## Capabilities to own
+<From intake: which skills the learner wants as their own competence at the end (e.g. "design the module layout myself", "debug plan diffs unaided") vs merely operate. Independence levels are tracked for these.>
+
 ## Milestones
 ### M1: <deliverable name>
 - Status: open | lesson-done | in-build | submitted | passed

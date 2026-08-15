@@ -1,16 +1,17 @@
 # Phase: Lesson
 
-Goal: one self-contained HTML lesson for the current milestone, grounded in the learner's repo. Style contract: `references/lesson-style.md`.
+Goal: teach the current milestone's concepts properly, grounded in the learner's repo, BEFORE they build. Chat is the teacher; the HTML page is the visual aid they revisit. Style contract: `references/lesson-style.md`.
 
 ## Steps (in order, all REQUIRED)
 
-1. **Re-read the relevant repo files.** The lesson must cite real paths and real resource names from the learner's repo. A lesson that could have been written without the repo is a failed lesson.
-2. **Check ledger/concepts** for prior knowledge, then pick the teaching method per concept using `references/methods.md`; record the pick and reason in the journal. Struggle-first pick: the lesson's DIY task moves BEFORE the full concept explanation, which becomes the post-attempt consolidation.
-3. **Write the lesson** to `STATE_DIR/lessons/NNNN-<slug>.html` (NNNN increments). Three layers, strictly in this order:
-   - **(a) Concept.** The general idea: anchor analogy first, term second, the seam where it leaks. Cite one primary source.
-   - **(b) This repo.** Map the concept onto the learner's actual files: "in your repo, X at `path` is the thing that...". Real names only.
-   - **(c) Do it yourself.** Task spec for the milestone deliverable: what to build, constraints, definition of done, prediction prompts to answer before running commands. **No solution code.** Doc links, not implementations.
-4. **Open it** in the browser (`open <file>` on macOS, `xdg-open` on Linux).
-5. **Journal**: lesson number, concepts introduced. Mark milestone `lesson-done` in PLAN.md.
+1. **Re-read the relevant repo files.** Real paths and resource names. A lesson that could have been written without the repo is a failed lesson.
+2. **Check the ledger** for the milestone's concepts and their stages. Pick the teaching method per concept using `references/methods.md` (worked example first for true novices, struggle-first only with adjacent prior knowledge); record the pick and reason in the journal.
+3. **Orient in chat first.** Before any page: the problem each concept exists to solve, framed as an engineering situation ("Postgres acknowledged the commit and lost power 5 ms later..."), the simplest mental model, why an engineer cares. Short. This is teaching, not a quiz: questions here are predictions from intuition only.
+4. **Write the visual aid** to `STATE_DIR/lessons/NNNN-<slug>.html` (NNNN increments). Three layers in order:
+   - **(a) Concept.** Anchor analogy, term, one worked example (toy domain or the repo's shape), the seam where it leaks. Diagrams and flows where they beat prose. One primary source.
+   - **(b) This repo.** Map the concept onto real files: "in your repo, X at `path` is the thing that...".
+   - **(c) Do it yourself.** Task spec for the deliverable: what to build, constraints, definition of done, prediction prompts to answer before running commands. No solution code for the deliverable. Doc links.
+5. **Open it** (`open <file>` on macOS, `xdg-open` on Linux), then **return to chat**: 2 to 3 stage-appropriate prompts (predict, explain the model back, apply to the repo). Wrong answers get diagnosed and repaired, not "try again".
+6. **Ledger and journal.** Concepts taught here become `introduced` (teaching explanation labeled as Claude's in "My model"); note lesson number and method picks in the journal. Mark milestone `lesson-done` in PLAN.md.
 
-Session may end here; build can start immediately if the learner wants.
+Session may end here; build can start immediately if the learner wants. Reading the page is not evidence; the build is where practice happens.
