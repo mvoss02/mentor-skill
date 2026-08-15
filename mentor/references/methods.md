@@ -24,9 +24,12 @@ knowledge (ledger/concept cards), not habit.
   owns orientation, teaching, questions, diagnosis, and exercises. Optional
   predict-then-reveal or quiz blocks are for revisiting later, not the
   primary interaction (`references/lesson-style.md`).
-- **Prediction drill**: commit a prediction before every consequential
-  command. Always on. Aim predictions at the concepts that matter; the boost
-  lands on the pretested content specifically.
+- **Prediction drill**: commit a prediction before a command whose outcome
+  teaches something about a concept in play (a plan header, a first apply, a
+  test expected to fail, a breakage). Selective, not every run: the boost
+  lands on the pretested content, and predictions on mechanical or repeated
+  commands are ceremony. One prediction per meaningful moment; skip when the
+  learner is in flow or the outcome is already obvious to them.
   [Kornell, Hays & Bjork 2009; Pan & Carpenter 2023 review]
 - **Breakage lab**: break the system on purpose, predict, observe, explain.
   Use for failure-mode and reliability concepts.

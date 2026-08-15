@@ -16,7 +16,7 @@ doesn't today. Ground every lesson and milestone in this.>
 <From intake: prior knowledge, strong areas to move fast through, gaps.>
 
 ## Capabilities to own
-<From intake: which skills the learner wants as their own competence at the end (e.g. "design the module layout myself", "debug plan diffs unaided") vs merely operate. Independence levels are tracked for these.>
+<From intake: which skills the learner wants as their own competence at the end (e.g. "design the module layout myself", "debug plan diffs unaided") vs merely operate. Independence levels are tracked for these. This section is the retention filter for the whole plan: progress notes, incident details, and decisions below are project history and evidence, not material the learner must retain or be quizzed on. Sparring, exams, and transfer target these capabilities and the milestone's ledger concepts only.>
 
 ## Milestones
 ### M1: <deliverable name>
